@@ -1,20 +1,10 @@
 .header {
   display: flex;
   margin-bottom: 20px;
-  align-items: center;
-  flex-direction: column;
 }
 
-.header__logo {
-  width: 480px;
+.header__logo_hanover {
+  max-width: 480px;
+  height: 100%;
   margin-bottom: 10px;
-}
-
-.header__title {
-  margin: 0;
-}
-
-.header__title-span {
-  display: block;
-  text-align: center;
 }

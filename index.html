@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MIBS Hanover 2026</title>
+    <title>PBIBS Hanover 2026</title>
     <meta name="description" content="MIBS 2026 Hanover landing page" />
     <meta name="keywords" content="boat, Show, Hanover" />
     <meta name="author" content="Elad Idel" />
@@ -11,60 +11,46 @@
   </head>
   <body>
     <div class="page">
-      <header class="header">
-        <img
-          src="./images/hanover-color-horizontal-logo.svg"
-          alt="Hanover Logo"
-          class="header__logo"
-        />
-        <h1 class="header__title">
-          Miami International Boat Show
-          <span class="header__title-span">2026</span>
-        </h1>
-      </header>
-      <main class="content">
-        <form action="" class="form">
-          <fieldset class="form__fieldset">
-            <label class="form__label">
-              Name:
+      <div class="page__content">
+        <header class="header">
+          <img
+            src="./images/hanover-color-horizontal-logo.svg"
+            alt="Hanover Logo"
+            class="header__logo_hanover"
+          />
+        </header>
+        <main class="content">
+          <form action="" class="form">
+            <fieldset class="form__fieldset">
               <input
                 type="text"
                 class="form__input"
                 placeholder="Name Surname"
                 required
               />
-            </label>
-            <label class="form__label">
-              Phone #:
               <input
                 type="numbers"
                 class="form__input"
                 placeholder="Phone Number"
                 required
               />
-            </label>
-            <label class="form__label">
-              Email:
               <input
                 type="email"
                 class="form__input"
                 placeholder="Email"
                 required
               />
-            </label>
-            <label class="form__label">
-              City & State
               <input
                 type="text"
                 class="form__input"
                 placeholder="City & State"
                 required
               />
-            </label>
-            <label class="form__label">
-              Model of interest:
-              <select class="form__select" required>
-                <option value=""></option>
+              <select
+                class="form__select"
+                placeholder="Model of intres"
+                required
+              >
                 <option value="Hanover 255">Hanover 255</option>
                 <option value="Hanover 265">Hanover 265</option>
                 <option value="Hanover 305">Hanover 305</option>
@@ -77,20 +63,17 @@
                 <option value="Hanover 415">Hanover 415</option>
                 <option value="Hanover 447">Hanover 447</option>
               </select>
-            </label>
-            <label class="form__label">
-              Salesperson:
               <select class="form__select" required>
-                <option value="Hanover 447"></option>
-                <option value="Hanover 255">Roni Meirovitz</option>
-                <option value="Hanover 265">Yohanan Castillo</option>
-                <option value="Hanover 305">Naama Issachar</option>
+                <option value="TBD">To Be Determined</option>
+                <option value="Roni Meirovitz">Roni Meirovitz</option>
+                <option value="Yohanan Castillo">Yohanan Castillo</option>
+                <option value="Naama Issachar">Naama Issachar</option>
               </select>
-            </label>
-          </fieldset>
-          <input type="submit" class="form__button" value="Send" />
-        </form>
-      </main>
+            </fieldset>
+            <input type="submit" class="form__button" value="Send" />
+          </form>
+        </main>
+      </div>
     </div>
   </body>
 </html>
