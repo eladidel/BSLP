@@ -1,13 +1,15 @@
 .form {
   margin: 0 auto;
   max-width: 1440px;
+  background-color: rgb(236, 236, 231);
+  border-radius: 15px;
 }
 
 .form__fieldset {
   border: none;
   margin: 0;
-  padding: 0;
-  width: 400px;
+  padding: 20px;
+  max-width: 400px;
 }
 
 .form__input {
@@ -20,6 +22,7 @@
   font-size: 20px;
   line-height: 30px;
   border: none;
+  border-radius: 25px;
 }
 
 .form__select {
@@ -32,6 +35,7 @@
   font-size: 20px;
   line-height: 30px;
   border: none;
+  border-radius: 25px;
 }
 
 .form__button {
@@ -45,6 +49,7 @@
   font-weight: 500;
   color: #fff;
   transition: background-color 0.3s;
+  border-radius: 25px;
 }
 
 .form__button:hover {
