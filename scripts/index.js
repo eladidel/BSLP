@@ -14,9 +14,10 @@ form.addEventListener("submit", (e) => {
     body: new FormData(form),
   })
     .then((response) => {
-      form.innerHTML =
-        "<h3>Thank you!</h3><p>An Hanover specialist will contact you shortly.</p>";
-      form.classList.add("form__success");
+      alert("Success! Your information has been sent.");
+      form.reset();
+      btn.disabled = false;
+      btn.innerHTML = "Send";
     })
     .catch((error) => {
       console.error("Error!", error.message);
