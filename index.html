@@ -7,93 +7,10 @@
     <meta name="description" content="Hanover landing page" />
     <meta name="keywords" content="boat, Show, Hanover" />
     <meta name="author" content="Elad Idel" />
-    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="page">
-      <div class="hello"></div>
-      <main class="content">
-        <form action="" class="form">
-          <header class="header">
-            <img
-              src="./images/hanover-logo.svg"
-              alt="Hanover Yahcts logo"
-              class="header__logo_hanover"
-            />
-            <img
-              src="./images/Boat_Show_Logo.svg"
-              alt="Boat Show Logo"
-              class="header__logo_show"
-            />
-          </header>
-          <fieldset class="form__fieldset">
-            <input
-              id="name"
-              name="Name"
-              type="text"
-              class="form__input"
-              placeholder="Name Surname"
-              required
-            />
-            <input
-              id="number"
-              name="Phone Number"
-              type="number"
-              class="form__input"
-              placeholder="Phone Number"
-              required
-            />
-            <input
-              id="email"
-              name="Email"
-              type="email"
-              class="form__input"
-              placeholder="Email"
-            />
-            <input
-              id="adress"
-              name="City & state"
-              type="text"
-              class="form__input"
-              placeholder="City & State"
-              required
-            />
-            <select
-              id="model"
-              name="Model of Interest"
-              class="form__select"
-              required
-            >
-              <option value="">Model of Interest</option>
-              <option value="Hanover 255">Hanover 255</option>
-              <option value="Hanover 265">Hanover 265</option>
-              <option value="Hanover 305">Hanover 305</option>
-              <option value="Hanover 447">Hanover 327</option>
-              <option value="Hanover 347">Hanover 347</option>
-              <option value="Hanover 355">Hanover 355</option>
-              <option value="Hanover 375">Hanover 375</option>
-              <option value="Hanover 377">Hanover 377</option>
-              <option value="Hanover 387">Hanover 387</option>
-              <option value="Hanover 415">Hanover 415</option>
-              <option value="Hanover 447">Hanover 447</option>
-              <option value="Not sure">Not Sure</option>
-            </select>
-            <select id="sales" name="Salesperson" class="form__select" required>
-              <option value="">Sales Person</option>
-              <option value="Roni Meirovitz">Roni Meirovitz</option>
-              <option value="Yohanan Castillo">Yohanan Castillo</option>
-              <option value="Naama Issachar">Naama Issachar</option>
-              <option value="Mike Wynn">Mike Wynn</option>
-              <option value="Andrew Rapoport">Andrew Rapoport</option>
-              <option value="Esther Toribio">Esther Toribio</option>
-              <option value="TBD">Not Determined Yet</option>
-            </select>
-            <button type="submit" class="form__button">Send</button>
-          </fieldset>
-        </form>
-      </main>
-    </div>
-    <script src="./scripts/index.js"></script>
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
