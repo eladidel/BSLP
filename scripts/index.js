@@ -1,5 +1,5 @@
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbw6VBUnuLAX9rwb2AIhe69GtPdU0vYKHXnQBpzuriybGLBDqPQ1BnQmqurgXTLr8JPLiQ/exec";
+  "https://script.google.com/macros/s/AKfycbzxAw3og4varwByYhSxXx7b6Ikz64N6kGYLgsEKpvl3MwAzXgnvAxujKZl3L307XEQ/exec";
 const form = document.querySelector(".form");
 const btn = form.querySelector(".form__button");
 
@@ -13,7 +13,11 @@ form.addEventListener("submit", (e) => {
     method: "POST",
     body: new FormData(form),
   })
-    .then((response) => {
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.result !== "success") {
+        throw new Error(data.error);
+      }
       alert("Success! Your information has been sent.");
       form.reset();
       btn.disabled = false;
